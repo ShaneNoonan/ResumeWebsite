@@ -7,24 +7,52 @@
     background-color: #676767;
 }
 
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
+
 .ui-menu-color-home{
-    background-color: #e67e22;
+    background-color: #026873;
 }
 
 .ui-menu-color-resume{
-    background-color: #9b59b6;
+    background-color: #03A6A6;
 }
 
 .ui-menu-color-contact{
-    background-color: #3498db;
+    background-color: #D96E48;
 }
 
 .ui-menu-color-download{
-    background-color: #525252;
+    background-color: #BF4545;
 }
 
 .bg-color-three-reasons {
     background-color: #fff
+}
+
+.bg-color-work-history{
+    background-color: #03A6A6;
+}
+
+.progress-bar-one {
+    background-color: #026873;
+}
+
+.progress-bar-two {
+    background-color: #03A6A6;
+}
+
+.progress-bar-three {
+    background-color: #F2B28D;
+}
+
+.progress-bar-four {
+    background-color: #D96E48;
+}
+
+.progress-bar-five {
+    background-color: #BF4545;
 }
 
 /* --------Paddings,margins,text------- */
@@ -57,6 +85,7 @@ h1,h2,h3,h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: 'Exo', sans-serif;
     font-weight: 300;
@@ -158,9 +187,120 @@ header {
     height: 120px;
 }
 
-/* --------footer------- */
+/* --------3 reasons------- */
 
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
 
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
+}
+
+/* --------3 reasons------- */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #D96E48;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
+}
+
+/* --------Skills------- */
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section{
+    margin: 40px 20px;
+}
+
+/* --------Work history------- */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    top: 2.4em;
+    position: absolute;
+    display: block;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
 
 /* --------footer------- */
 
@@ -183,7 +323,7 @@ footer {
 }
 
 .cv-pdf i:hover {
-    color: #e84610;
+    color: #D96E48;
 }
 
 .social-links {
@@ -207,7 +347,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: #e84610;
+    background: #D96E48;
 }
 
 #footer-details {
